@@ -10,7 +10,7 @@ const ProjectsContainer = () => {
         fetch('https://api.github.com/users/maggieAmin/repos', {
             method: "GET",
             headers: {
-                Authorization: `Bearer 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` 
+                Authorization: `Bearer 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` 
             }})
         .then(res => res.json())
         .then(res => res.map(repo => ({
