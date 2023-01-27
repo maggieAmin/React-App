@@ -9,9 +9,7 @@ const ProjectsContainer = () => {
     useEffect(() => {
         fetch('https://api.github.com/users/maggieAmin/repos', {
             method: "GET",
-            headers: {
-                Authorization: `Bearer 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` 
-            }})
+            })
         .then(res => res.json())
         .then(res => res.map(repo => ({
             title: repo.name, repoUrl : repo.html_url
